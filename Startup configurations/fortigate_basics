@@ -1,0 +1,27 @@
+# This is a basic cli script to enable basic enhancements for my lab environment of FortiOS for the Fortigate.
+
+config system global
+set admintimeout 480
+set autorun-log-fsck enable
+set gui-display-hostname enable
+set revision-backup-on-logout enable
+end
+
+#Add a new administrator since newer FortiOS's requires change of admin password anyway.
+config system admin
+edit "per"
+set trusthost1 192.168.0.0 255.255.0.0
+set trusthost2 172.16.0.0 255.240.0.0
+set trusthost3 10.0.0.0 255.0.0.0
+set accprofile "super_admin"
+set vdom "root"
+set password Fortinet1!
+end
+
+#Configure a management interface to access the GUI to upload the relevant node configuration
+config system interface
+edit port1
+set ip 192.168.86.110 255.255.255.0
+set allowaccess http https ssh ping
+end
+
