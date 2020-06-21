@@ -1,0 +1,8 @@
+name    type    address     netmask         associated-interface
+clients ipmask  10.0.1.0    255.255.255.0   vlan11
+clients ipmask  10.0.2.0    255.255.255.0   vlan12
+clients ipmask  10.0.3.0    255.255.255.0   vlan13
+clients ipmask  10.0.4.0    255.255.255.0   vlan14
+clients ipmask  10.0.5.0    255.255.255.0   vlan15
+clients ipmask  10.0.6.0    255.255.255.0   vlan16
+clients ipmask  10.0.7.0    255.255.255.0   vlan17
