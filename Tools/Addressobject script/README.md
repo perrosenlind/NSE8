@@ -1,4 +1,5 @@
 This script can be used to create addressobjects for your Fortigate (and maybe other FortOS devices aswell, on FG verified). 
+Currently no support for names with whitespaces.
 Note that the input file needs to be whitespace seperated for this script to work in the following order:
 
 1. name    
