@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
 #Variables:
-#filename:
-f_input = '/Users/perrosenlind/Documents/GitHub/NSE8/Tools/Addressobject script/addresslist.txt'
-f_output = '/Users/perrosenlind/Documents/GitHub/NSE8/Tools/Addressobject script/addresslist.conf'
+#filename/path:
+f_input = 'addresslist.txt'
+f_output = 'addresslist.conf'
 
 #Open a file with access mode 'a+'
 output = open(f_output, 'a+')
@@ -19,8 +19,7 @@ for line in addresslist.splitlines():
     netmask = fields[3]
     associatedinterface = fields[4]
     output.write('\n')
-    output.write('config firewall address')
-    output.write('\n')
+    output.write('config firewall address\n')
     output.write('edit "')
     output.write(name)
     output.write('"\n')
@@ -35,8 +34,7 @@ for line in addresslist.splitlines():
     output.write('set associated-interface ')
     output.write(associatedinterface)
     output.write('\n')
-    output.write('end')
-    output.write('\n')
+    output.write('end\n')
     
 #close the file
 output.close()
