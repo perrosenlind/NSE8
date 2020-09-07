@@ -1,0 +1,5 @@
+[fortigates]
+FW01 ansible_host="https://www.fortiknight.com:4443" ansible_user="per" ansible_password="Pelle123"
+
+[fortigates:vars]
+ansible_network_os=fortinet.fortios.fortios

@@ -18,7 +18,7 @@ with open(f_input) as addresslist:
         output.write('set type' + line[1] + '\n')
         output.write('set comment "' + line[5] + '"\n')
         output.write('set associated-interface "' + line[4] + '"\n')
-        output.write('set subnet ' + line[2] + ' ' + line[3] + '\n')
+        output.write('set subnet "' + line[2] + line[3] + '"\n')
         output.write('next\n')
         line_count += 1
     output.write('end\n')
@@ -27,11 +27,4 @@ with open(f_input) as addresslist:
 output.close()
 #Inform the user about how many objects that has been created.
 print(f'Created {line_count} objects.')
-
-
-
-
-
-
-        
 
