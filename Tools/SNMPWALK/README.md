@@ -1,1 +1,1 @@
-# snmpwalktest
+# snmpwalktest based on ipvzero's script.
