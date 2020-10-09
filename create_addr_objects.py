@@ -9,7 +9,7 @@ f_output = 'addresslist_from_csv.conf'
 output = open(f_output, 'a+')
 
 with open(f_input) as addresslist:
-    csv_reader = csv.reader(addresslist, delimiter=',')
+    csv_reader = csv.reader(addresslist, delimiter=';')
     addresslist.readline() #Skip csv header
     line_count = 0
     output.write('config firewall address\n')
