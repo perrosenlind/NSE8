@@ -6,18 +6,21 @@ from rich.console import Console
 from rich.table import Table
 import itertools
 
+#General settings
 good_list = []
 bad_list = []
+device_count = 0
+number_of_lines = 0
 
 #SNMP Settings
 auth_proto = "SHA"
 priv_proto = "AES"
 #snmp_oid = "1.3.6.1.2.1.1"
 snmp_oid = "system"
-device_count = 0
 snmp_version = "SNMPv3"
-number_of_lines = 0
 username = "Not set"
+
+#Show settings for user
 print("Current settings:")
 print(f"SNMP Version: {snmp_version}")
 print(f"Username: {username}")
