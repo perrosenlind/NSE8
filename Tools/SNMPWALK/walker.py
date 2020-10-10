@@ -50,7 +50,7 @@ for ip in filelines:
     result = output.decode("utf-8", "ignore")
     #print(result)
     print(f'Read done')
-    print(f'Result: ')
+    print(f'Result:')
     if "MIB" in result:
         good_list.append(ip)
         print("Successful!")
